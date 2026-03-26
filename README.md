@@ -1,4 +1,6 @@
 # pz11
+<img width="1055" height="371" alt="image" src="https://github.com/user-attachments/assets/bfd37e5e-a50d-442e-b363-b775a70a9da8" />
+
 Ex1
 ```
 #include <iostream>
