@@ -1,10 +1,214 @@
 # pz11
-![Скриншот 25-03-2026 113142](https://github.com/user-attachments/assets/ba0a9bb7-2f1e-4719-bcf1-1922e88d8f6d)
-![Скриншот 25-03-2026 113159](https://github.com/user-attachments/assets/5839496c-3ded-4bb2-9c3e-d307f3ecf832)
-![Скриншот 25-03-2026 113214](https://github.com/user-attachments/assets/82f3fd5f-b6c9-49ea-9fc2-01add12b4759)
-![Скриншот 25-03-2026 113225](https://github.com/user-attachments/assets/a66ad658-c88b-4f8c-8557-da959e285811)
-![Скриншот 25-03-2026 113241](https://github.com/user-attachments/assets/699cd056-dcb1-467c-9f2c-4f9722793000)
-![Скриншот 25-03-2026 113255](https://github.com/user-attachments/assets/bb90a5d2-3b41-4c92-b024-b973319a4e6f)
-![Скриншот 25-03-2026 113313](https://github.com/user-attachments/assets/6c112432-0500-4007-8d3f-0926033459bb)
-![Скриншот 25-03-2026 113326](https://github.com/user-attachments/assets/a34adad5-3913-4167-bbd6-318ce8c0e438)
-![Скриншот 25-03-2026 113340](https://github.com/user-attachments/assets/868a96b9-6520-4d25-b4e3-31a733d4b1e3)
+Ex1
+```
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+
+    int n;
+    cin >> n;
+    int i = 1;
+while (i <= n) {
+    cout << i << " ";
+    i++;
+}
+
+    // Ваш код:
+
+
+    return 0;
+}
+```
+Ex2
+```
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+
+    int n;
+    cin >> n;
+    int sum = 0;      
+    int i = 1;      
+    while (i <= n) {   
+        sum += i;     
+        ++i;        
+    }
+
+    cout << sum << endl;
+
+    return 0;
+}
+
+```
+Ex3
+```
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+
+    int num, sum = 0;
+cin >> num;
+while (num != 0) {
+    sum += num;
+    cin >> num;
+    
+}
+cout << sum;
+
+
+    return 0;
+}
+```
+Ex4
+```
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+    int n;
+    cin >> n;
+
+    // Ваш код:
+    int i = 2;
+    while (i <= n) {
+        cout << i << " ";
+        i += 2;
+    }
+ 
+
+    return 0;
+}
+
+```
+Ex5
+```
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+
+    int n;
+    cin >> n;
+
+    // Ваш код:
+    int f = 1;  
+    int i = 1;        
+
+    while (i <= n) {
+        f = f * i;  
+        i = i + 1;               
+    }
+
+    cout << f;
+
+    return 0;
+}
+
+```
+Ex6
+```
+#include <iostream>
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+
+    int n;
+    cin >> n;
+
+    // Ваш код:
+    int i = 0;
+    if (n < 0) {
+        n = -n;
+    }
+    while (n != 0) {
+        i++;   
+        n /= 10;  
+    }
+    cout << i;
+
+    return 0;
+}
+
+```
+Ex7
+```
+#include <iostream>
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+    
+    int n;
+    cin >> n;
+
+    // Ваш код:
+    if (n <= 1) {
+        cout << "Не простое";
+        return 0;
+    }
+    if (n == 2) {
+        cout << "Простое";
+        return 0;
+    } 
+    if (n % 2 == 0) {
+        cout << "Не простое";
+        return 0;
+    }
+    int i = 3;
+    int x = 0; 
+    while (i * i <= n && x == 0) {
+        if (n % i == 0) {
+            x = 1;  
+        }
+        i += 2;  
+    }
+    if (x == 1) {
+        cout << "Не простое" ;
+    } else {
+        cout << "Простое";
+    }
+    return 0;
+}
+
+```
+Ex8
+```
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+    
+    int n;
+    cin >> n;
+    
+    int i = 1; 
+   while (i <= n) {
+        int x = 1;  
+        while (x <= n) {
+            cout << (i * x) << " ";  
+            x++;
+        }
+       cout << endl;
+        i++;
+    }
+    
+    return 0;
+}
+
+```
